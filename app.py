@@ -12,9 +12,9 @@ with urlopen('https://raw.githubusercontent.com/plotly/datasets/master/geojson-c
 
 ########### Define a few variables ######
 
-tabtitle = 'Virginia Counties'
+tabtitle = 'Guess Counties'
 sourceurl = 'https://www.kaggle.com/muonneutrino/us-census-demographic-data'
-githublink = 'https://github.com/austinlasseter/dash-virginia-counties'
+githublink = 'https://github.com/wendi-cui/305-virginia-census-data'
 varlist=['TotalPop', 'Men', 'Women', 'Hispanic',
        'White', 'Black', 'Native', 'Asian', 'Pacific', 'VotingAgeCitizen',
        'Income', 'IncomeErr', 'IncomePerCap', 'IncomePerCapErr', 'Poverty',
@@ -34,7 +34,7 @@ app.title=tabtitle
 ########### Layout
 
 app.layout = html.Div(children=[
-    html.H1('Virginia Census Data 2017'),
+    html.H1('Can you guess which state 2017 Census Data this is'),
     # Dropdowns
     html.Div(children=[
         # left side
